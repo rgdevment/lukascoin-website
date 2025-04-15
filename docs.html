@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="resources/images/lukas_coin_logo_32.png" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const emailElement = document.getElementById("email-protected");
+            const parts = ["co", "nt", "act", "o", "@", "lu", "ka", "sc", "oi", "n.cl"];
+            const shuffled = [parts[0], parts[1] + parts[2] + parts[3], parts[4], parts[5] + parts[6] + parts[7] + parts[8] + parts[9]];
+            const email = shuffled.join("");
+            emailElement.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -83,15 +92,7 @@ Decimales: 18
         <h2>¿Cómo obtener LKS?</h2>
         <p>Lukas Coin es un proyecto abierto y solidario. Los tokens se entregan de manera simbólica como agradecimiento a quienes colaboran o participan activamente en el proyecto.</p>
 
-        <p>Si deseas solicitar tokens o saber cómo contribuir: <strong><span id="email-token"></span></strong></p>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const e = ["to", "ken", "@", "lu", "kas", "co", "in.", "cl"];
-                const email = e[0] + e[1] + e[2] + e[3] + e[4] + e[5] + e[6] + e[7];
-                const el = document.getElementById("email-token");
-                el.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
-            });
-        </script>
+        <p>Si deseas solicitar tokens o saber cómo contribuir: <strong><span id="email-protected"></span></strong></p>
     </section>
 </main>
 
