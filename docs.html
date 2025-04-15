@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Documentación de Lukas Coin: Instrucciones y detalles técnicos del token." />
+    <title>Lukas Coin | Documentación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="resources/images/lukas_coin_logo_32.png" />
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Lukas Coin</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+                <li><a href="docs.html">Documentación</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="https://github.com/rgdevment/LukasCoin" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="resources/images/lukas_coin_logo_256.png" alt="Logo grande de Lukas Coin" style="width: 160px; max-width: 90%; margin-bottom: 1rem;" />
+        <div class="hero-content">
+            <h1>Documentación</h1>
+            <p>Contactate con nosotros si tienes dudas</p>
+        </div>
+    </section>
+    <section class="info">
+        <h2>¿Cómo agregar LKS a tu wallet?</h2>
+        <ol>
+            <li>Abre tu billetera (MetaMask, Trust Wallet, etc.) y selecciona la red <strong>Polygon</strong>.</li>
+            <li>Si no tienes Polygon configurado, añade esta red manualmente con los siguientes datos:
+                <pre>
+Nombre de red: Polygon Mainnet
+RPC URL: https://polygon-rpc.com
+Chain ID: 137
+Símbolo: MATIC
+Explorador: https://polygonscan.com
+          </pre>
+            </li>
+            <li>Luego, haz clic en <strong>Agregar Token Personalizado</strong> y utiliza esta información:
+                <pre>
+Dirección del contrato: 0x31EF5a8a8Fa124D7270543c1095A45381740c490
+Símbolo del token: LKS
+Decimales: 18
+          </pre>
+            </li>
+        </ol>
+
+        <h2>Detalles del Token</h2>
+        <ul>
+            <li>Nombre: Lukas Coin</li>
+            <li>Símbolo: LKS</li>
+            <li>Red: Polygon PoS</li>
+            <li>Decimales: 18</li>
+            <li>Suministro total: 42.000.000 LKS</li>
+        </ul>
+
+        <h2>Archivos de Referencia</h2>
+        <ul>
+            <li><a href="resources/info.json" target="_blank">Ver info.json</a></li>
+            <li><a href="https://github.com/rgdevment/LukasCoin" target="_blank">Repositorio en GitHub</a></li>
+            <li><a href="https://polygonscan.com/token/0x31EF5a8a8Fa124D7270543c1095A45381740c490" target="_blank">Ver en Polygonscan</a></li>
+        </ul>
+
+        <h2>¿Cómo obtener LKS?</h2>
+        <p>Puedes solicitar tokens escribiendo a <strong><span id="email-token"></span></strong> y descubrir cómo contribuir al proyecto.</p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const e = ["to", "ken", "@", "lu", "kas", "co", "in.", "cl"];
+                const email = e[0] + e[1] + e[2] + e[3] + e[4] + e[5] + e[6] + e[7];
+                const el = document.getElementById("email-token");
+                el.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+            });
+        </script>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Lukas Coin. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
