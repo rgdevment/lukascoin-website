@@ -25,7 +25,7 @@ const AddToMetaMaskButton: React.FC = () => {
             address: '0x31EF5a8a8Fa124D7270543c1095A45381740c490',
             symbol: 'LKS',
             decimals: 18,
-            image: 'https://lukascoin.cl/resources/images/lukas_coin_logo_256.png',
+            image: 'https://lukascoin.cl/lukas_coin_logo_32.svg',
           },
         },
       })
@@ -42,7 +42,7 @@ const AddToMetaMaskButton: React.FC = () => {
 
   return (
     <button className="btn btn-metamask" onClick={addLKS}>
-      🦊 Agregar LKS a MetaMask
+      LKS en MetaMask
     </button>
   )
 }
