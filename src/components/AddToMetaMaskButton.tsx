@@ -42,7 +42,7 @@ const AddToMetaMaskButton: React.FC = () => {
 
   return (
     <button className="btn btn-metamask" onClick={addLKS}>
-      Agregar LKS a MetaMask
+      LKS en MetaMask
     </button>
   )
 }
