@@ -191,7 +191,7 @@ footer {
 }
 
 pre {
-  white-space: pre-wrap; /* permite quiebres de línea naturales */
+  white-space: pre-wrap;
   word-wrap: break-word;
   background-color: #f9f9f9;
   padding: 1rem;
@@ -200,4 +200,91 @@ pre {
   font-size: 0.9rem;
   border-radius: 6px;
   margin-top: 0.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.wallet-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.wallet-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+.wallet-button {
+  width: 24px; /* Un tamaño adecuado para un ícono */
+  height: auto; /* Se ajusta proporcionalmente */
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+  vertical-align: middle; /* Alinea verticalmente con el texto del botón */
+}
+
+.token-details p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.token-address {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.modal-footer-note {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
 }

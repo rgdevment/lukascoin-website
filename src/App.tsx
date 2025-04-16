@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import AddToMetaMaskButton from './components/AddToMetaMaskButton.tsx'
+import Footer from './components/Footer.tsx'
 
 export default function App() {
   return (
@@ -46,23 +46,7 @@ export default function App() {
         <Outlet />
       </main>
 
-      <footer>
-        <AddToMetaMaskButton />
-
-        <p>&copy; 2025 Lukas Coin. Todos los derechos reservados.</p>
-        <p>
-          <a href="https://github.com/rgdevment/LukasCoin" target="_blank">
-            GitHub
-          </a>{' '}
-          |{' '}
-          <a
-            href="https://polygonscan.com/token/0x31EF5a8a8Fa124D7270543c1095A45381740c490"
-            target="_blank"
-          >
-            Polygonscan
-          </a>
-        </p>
-      </footer>
+      <Footer />
     </main>
   )
 }

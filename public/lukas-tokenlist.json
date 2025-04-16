@@ -22,7 +22,9 @@
       "symbol": "LKS",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/rgdevment/LukasCoin/main/resources/images/lukas_coin_logo_256.png",
-      "tags": ["community"]
+      "tags": ["community"],
+      "description": "Lukas Coin es una criptomoneda orientada a iniciativas comunitarias y de solidaridad, diseñada para operar en la red Polygon.",
+      "website": "https://lukascoin.cl"
     }
   ]
 }

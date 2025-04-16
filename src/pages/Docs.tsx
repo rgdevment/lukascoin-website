@@ -1,7 +1,11 @@
 import logo from '../assets/lukas_coin_logo_256.svg'
-import AddToMetaMaskButton from '../components/AddToMetaMaskButton.tsx'
+import wallet from '../assets/wallets/wallet.png'
+import TokenModal from '../components/TokenModal.tsx'
+import { useState } from 'react'
 
 export default function Docs() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false)
+
   return (
     <main>
       <section className="hero">
@@ -19,14 +23,14 @@ export default function Docs() {
       <section className="info">
         <h2>Agregar LKS a tu Wallet</h2>
 
-        <h3>⚡ Opción rápida con MetaMask</h3>
-        <p>Haz clic en el siguiente botón para agregar LKS automáticamente a MetaMask:</p>
-        <AddToMetaMaskButton />
-        <h3>🛠️ Opción manual (todas las wallets)</h3>
+        <button className="btn" onClick={() => setModalOpen(true)}>
+          <img src={wallet} alt="Add to wallet" className="wallet-button" /> Agregar LKS a tu Wallet
+        </button>
+
+        <h3>🛠️ Datos técnicos</h3>
         <ol>
           <li>
-            Abre tu billetera (MetaMask, Trust Wallet, etc.) y selecciona la red{' '}
-            <strong>Polygon</strong>.
+            Estamos en la red de <strong>Polygon</strong>.
           </li>
           <li>
             Si no tienes la red Polygon configurada, usa:
@@ -116,6 +120,7 @@ Decimales: 18`}
           </li>
         </ul>
       </section>
+      <TokenModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </main>
   )
 }
