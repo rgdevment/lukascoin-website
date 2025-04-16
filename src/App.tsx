@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Footer from './components/Footer.tsx'
 
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
       <header>
         <nav className="navbar">
           <div className="nav-container">
-            <a href="/public" className="nav-logo">
+            <a href="/" className="nav-logo">
               Lukas Coin
             </a>
             <input type="checkbox" id="menu-toggle" className="menu-toggle" />
@@ -18,22 +18,22 @@ export default function App() {
             </label>
             <ul className="nav-links">
               <li>
-                <a href="/">Inicio</a>
+                <Link to="/">Inicio</Link>
               </li>
               <li>
-                <a href="/about">Sobre el Proyecto</a>
+                <Link to="/about">Sobre el Proyecto</Link>
               </li>
               <li>
-                <a href="/docs">Documentación</a>
+                <Link to="/docs">Documentación</Link>
               </li>
               <li>
-                <a href="/roadmap">Roadmap</a>
+                <Link to="/roadmap">Roadmap</Link>
               </li>
               <li>
-                <a href="/contact">Contacto</a>
+                <Link to="/contact">Contacto</Link>
               </li>
               <li>
-                <a href="https://github.com/rgdevment/LukasCoin" target="_blank">
+                <a href="https://github.com/rgdevment/LukasCoin" target="_blank" rel="noreferrer">
                   GitHub
                 </a>
               </li>
