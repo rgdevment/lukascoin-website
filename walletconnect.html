@@ -2,31 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conectar Wallet - Lukas Coin</title>
+    <title>WalletConnect - Lukas Coin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
 </head>
 <body>
 <h1>Conectar tu Wallet</h1>
 <button onclick="connectWallet()">Conectar Wallet</button>
 <p id="wallet-address"></p>
 
-<script type="module">
-    import { EthereumProvider } from "https://unpkg.com/@walletconnect/ethereum-provider/dist/index.js";
-
+<script>
     async function connectWallet() {
-        const provider = await EthereumProvider.init({
-            projectId: '6135f3b213e32202ae5044d954a7bea0',
-            chains: [137],
-            showQrModal: true
+        const provider = new WalletConnectProvider.default({
+            rpc: {
+                137: "https://polygon-rpc.com"
+            },
+            chainId: 137,
+            projectId: "6135f3b213e32202ae5044d954a7bea0",
+            qrcode: true
         });
 
         await provider.enable();
-        const accounts = await provider.request({ method: 'eth_accounts' });
+
+        const accounts = provider.accounts;
         document.getElementById("wallet-address").textContent = `Wallet conectada: ${accounts[0]}`;
     }
-
-    // 👇 Expón la función al contexto global
-    window.connectWallet = connectWallet;
 </script>
 </body>
 </html>
