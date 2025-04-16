@@ -22,54 +22,53 @@ export default function About() {
         <h2>Nuestra historia</h2>
 
         <p>
-          Desde el año 2022 nuestra vida cambió para siempre. Somos una familia chilena,
-          padres de Lucas, un niño maravilloso con autismo que nos ha enseñado a ver el
-          mundo desde otra perspectiva. Su camino de aprendizaje ha sido un desafío enorme,
-          no solo para él, sino también para nosotros como padres.
+          Desde el año 2022 nuestra vida cambió para siempre. Somos una familia chilena, padres de
+          Lucas, un niño maravilloso con autismo que nos ha enseñado a ver el mundo desde otra
+          perspectiva. Su camino de aprendizaje ha sido un desafío enorme, no solo para él, sino
+          también para nosotros como padres.
         </p>
 
         <p>
           Nos enfrentamos a un sistema educativo que muchas veces no está preparado para la
-          diversidad. Lucas fue rechazado en varias escuelas públicas y privadas por ser un
-          niño diferente: no verbal, con dificultades de desarrollo y sin control total de
-          su esfínter. Las puertas se cerraban una tras otra.
+          diversidad. Lucas fue rechazado en varias escuelas públicas y privadas por ser un niño
+          diferente: no verbal, con dificultades de desarrollo y sin control total de su esfínter.
+          Las puertas se cerraban una tras otra.
         </p>
 
         <p>
-          Detrás de cada rechazo había una familia que no se rendía. Nuestra vida se
-          transformó en una rutina de terapias semanales: fonoaudiología, psicopedagogía,
-          terapia ocupacional y un trabajo constante en el hogar para la regulación sensorial
-          y la creación de hábitos firmes. Todo con un solo propósito: que Lucas pudiera
-          comunicarse, aprender y ser feliz.
+          Detrás de cada rechazo había una familia que no se rendía. Nuestra vida se transformó en
+          una rutina de terapias semanales: fonoaudiología, psicopedagogía, terapia ocupacional y un
+          trabajo constante en el hogar para la regulación sensorial y la creación de hábitos
+          firmes. Todo con un solo propósito: que Lucas pudiera comunicarse, aprender y ser feliz.
         </p>
 
         <p>
-          Gracias al esfuerzo y al amor incondicional logramos integrarlo en una escuela
-          pública, donde su madre trabaja como psicopedagoga y puede brindarle un
-          acompañamiento personalizado para potenciar su desarrollo. Pero incluso ahí
-          enfrentamos miradas incómodas, comentarios injustos y discriminación velada al
-          dedicarle tiempo extra cuando lo necesita.
+          Gracias al esfuerzo y al amor incondicional logramos integrarlo en una escuela pública,
+          donde su madre trabaja como psicopedagoga y puede brindarle un acompañamiento
+          personalizado para potenciar su desarrollo. Pero incluso ahí enfrentamos miradas
+          incómodas, comentarios injustos y discriminación velada al dedicarle tiempo extra cuando
+          lo necesita.
         </p>
 
         <p>
-          Esto no solo ha sido una lucha diaria; ha sido, sobre todo, un aprendizaje profundo
-          como familia. Comprendimos que muchos retos de Lucas están ligados a la
-          propiocepción —el conocimiento de su propio cuerpo y sus necesidades— y a un entorno
-          que todavía no sabe cómo responder. Sin embargo, descubrimos que detrás de cada
-          dificultad hay oportunidades para innovar, crear y construir un mundo mejor.
+          Esto no solo ha sido una lucha diaria; ha sido, sobre todo, un aprendizaje profundo como
+          familia. Comprendimos que muchos retos de Lucas están ligados a la propiocepción —el
+          conocimiento de su propio cuerpo y sus necesidades— y a un entorno que todavía no sabe
+          cómo responder. Sin embargo, descubrimos que detrás de cada dificultad hay oportunidades
+          para innovar, crear y construir un mundo mejor.
         </p>
 
         <p>
-          Entendimos que la tecnología puede ser un puente maravilloso para mejorar la vida
-          de nuestros hijos y de muchas otras familias que pasan por lo mismo: aplicaciones
-          que convierten gestos en palabras, herramientas que calman crisis sensoriales e
-          iniciativas que facilitan la inclusión real.
+          Entendimos que la tecnología puede ser un puente maravilloso para mejorar la vida de
+          nuestros hijos y de muchas otras familias que pasan por lo mismo: aplicaciones que
+          convierten gestos en palabras, herramientas que calman crisis sensoriales e iniciativas
+          que facilitan la inclusión real.
         </p>
 
         <p>
-          Un niño que no puede decir qué le duele o qué necesita, que llora de angustia sin
-          poder explicarse… es un llamado urgente a hacer las cosas mejor. Lucas nos enseñó
-          que con paciencia, creatividad y amor es posible romper barreras invisibles.
+          Un niño que no puede decir qué le duele o qué necesita, que llora de angustia sin poder
+          explicarse… es un llamado urgente a hacer las cosas mejor. Lucas nos enseñó que con
+          paciencia, creatividad y amor es posible romper barreras invisibles.
         </p>
       </section>
 
