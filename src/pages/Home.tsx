@@ -25,9 +25,9 @@ export default function Home() {
       <section className="info">
         <h2>¿Qué es Lukas Coin?</h2>
         <p>
-          Lukas Coin (LKS) es una criptomoneda solidaria sin fines de lucro. Su objetivo es mejorar
-          la calidad de vida de niños y familias afectadas por el autismo mediante tecnología Web3,
-          comunicación aumentativa e inclusión digital.
+          Lukas Coin (LKS) es una criptomoneda sin fines de lucro. Su objetivo es mejorar la calidad
+          de vida de niños y familias con autismo fomentando y apoyando el aprendizaje y mejorando
+          la calidad de vida mediante tecnología Web3, comunicación aumentativa e inclusión digital.
         </p>
         <p>
           Inspirado en Lukas, un niño chileno con autismo, este proyecto busca romper barreras,
