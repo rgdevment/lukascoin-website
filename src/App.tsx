@@ -18,7 +18,7 @@ export default function App() {
             </label>
             <ul className="nav-links">
               <li>
-                <a href="/public">Inicio</a>
+                <a href="/">Inicio</a>
               </li>
               <li>
                 <a href="/about">Sobre el Proyecto</a>

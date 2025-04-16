@@ -1,5 +1,4 @@
 import logo from '../assets/lukas_coin_logo_256.svg'
-import Obfuscate from 'react-obfuscate'
 import AddToMetaMaskButton from '../components/AddToMetaMaskButton.tsx'
 
 export default function Docs() {
@@ -116,19 +115,6 @@ Decimales: 18`}
             </a>
           </li>
         </ul>
-      </section>
-
-      <section className="info">
-        <h2>🙌 ¿Preguntas o colaboración?</h2>
-        <p>Escríbenos si deseas contribuir al proyecto, aprender más o proponer ideas:</p>
-        <p>
-          <strong>
-            <Obfuscate
-              email="contacto@lukascoin.cl"
-              headers={{ subject: 'Consulta desde Lukas Coin' }}
-            />
-          </strong>
-        </p>
       </section>
     </main>
   )
