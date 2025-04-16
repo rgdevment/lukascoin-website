@@ -73,7 +73,7 @@ const TokenModal: React.FC<TokenModalProps> = ({ isOpen, onClose }) => {
                 <h3>Copiar Datos</h3>
                 <p>Copia la información del token para luego pegarla en tu wallet.</p>
                 <button className="btn" onClick={copyTokenDetails}>
-                  Agregar Copiando Datos
+                  Copiar LKS datos
                 </button>
               </div>
 
