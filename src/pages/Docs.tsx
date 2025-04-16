@@ -38,7 +38,7 @@ export default function Docs() {
               {`Nombre: Polygon Mainnet
 RPC URL: https://polygon-rpc.com
 Chain ID: 137
-Símbolo: MATIC
+Símbolo: POL
 Explorador: https://polygonscan.com`}
             </pre>
           </li>
