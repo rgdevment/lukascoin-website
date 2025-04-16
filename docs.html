@@ -17,6 +17,22 @@
             emailElement.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
         });
     </script>
+    <script>
+        function addLKS() {
+            ethereum.request({
+                method: 'wallet_watchAsset',
+                params: {
+                    type: 'ERC20',
+                    options: {
+                        address: '0x31EF5a8a8Fa124D7270543c1095A45381740c490',
+                        symbol: 'LKS',
+                        decimals: 18,
+                        image: 'https://lukascoin.cl/resources/images/lukas_coin_logo_256.png',
+                    },
+                },
+            });
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -49,29 +65,43 @@
             <p>Todo lo que necesitas saber para agregar, usar y participar en Lukas Coin.</p>
         </div>
     </section>
+
     <section class="info">
         <h2>¿Cómo agregar LKS a tu wallet?</h2>
-        <p>Sigue estos pasos para añadir Lukas Coin (LKS) a tu billetera favorita de forma manual:</p>
+
+        <div class="wallet-section">
+            <h3>Opción rápida</h3>
+            <p>Haz clic en el botón para añadir Lukas Coin (LKS) automáticamente a MetaMask:</p>
+            <button class="btn btn-metamask" onclick="addLKS()">
+                Agregar LKS a MetaMask
+            </button>
+        </div>
+
+        <h3>Opción manual</h3>
+        <p>También puedes agregarlo manualmente en cualquier wallet compatible:</p>
+
         <ol>
             <li>Abre tu billetera (MetaMask, Trust Wallet, etc.) y selecciona la red <strong>Polygon</strong>.</li>
-            <li>Si no tienes Polygon configurado, añade esta red manualmente con los siguientes datos:
-                <pre>
-Nombre de red: Polygon Mainnet
+            <li>Si no la tienes configurada, usa:
+                <pre class="token-pre">
+Nombre: Polygon Mainnet
 RPC URL: https://polygon-rpc.com
 Chain ID: 137
 Símbolo: MATIC
 Explorador: https://polygonscan.com
-          </pre>
+      </pre>
             </li>
-            <li>Luego, haz clic en <strong>Agregar Token Personalizado</strong> y utiliza esta información:
-                <pre>
-Dirección del contrato: 0x31EF5a8a8Fa124D7270543c1095A45381740c490
-Símbolo del token: LKS
+            <li>Luego, en “Agregar Token Personalizado”, usa:
+                <pre class="token-pre">
+Dirección: 0x31EF5a8a8Fa124D7270543c1095A45381740c490
+Símbolo: LKS
 Decimales: 18
-          </pre>
+      </pre>
             </li>
         </ol>
+    </section>
 
+    <section class="info">
         <h2>Detalles del Token</h2>
         <ul>
             <li>Nombre: Lukas Coin</li>
